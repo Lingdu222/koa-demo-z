@@ -9,7 +9,7 @@
     "Koa",
     "Node"
   ],
-  "author": "Ruan Yifeng",
+  "author": "zhangyuhong",
   "license": "ISC",
   "dependencies": {
     "fs.promised": "^3.0.0",
