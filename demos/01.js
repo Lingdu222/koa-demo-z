@@ -1,27 +1,11 @@
-const Koa = require("koa")
-const fs = require("fs")
-const route = require("koa-route")
-const app = new Koa();
-
 /**
- * context对象
+ * 迄今为止，所有例子的中间件都是同步的，不包含异步操作。如果有异步操作（比如读取数据库），中间件就必须写成 async 函数。
+ * 
  */
-const main = ctx => {
-    ctx.response.body="hello main"
-}
-const about = ctx => {
-    ctx.response.type = 'html';
-    ctx.response.body = '<a href="/">Index Page</a>';
-}
 
-/**
- * 路由的使用
- */
-app.use(route.get('/',main))
-app.use(route.get('/about',about))
+const Koa=require("koa")
+const app=new Koa()
 
-
-
-app.listen(3030,(error)=>{
-    console.log(error)
+app.listen(3030,()=>{
+    console.log("hello koa")
 })
