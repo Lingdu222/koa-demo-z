@@ -4,7 +4,7 @@
   "description": "a collection of simple demos of Koa",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"nodemon demos/01.js"
+    "start": "nodemon demo2/index .js"
   },
   "keywords": [
     "Koa",
@@ -13,14 +13,23 @@
   "author": "zhangyuhong",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.18.3",
+    "connect-mongo": "^2.0.1",
+    "cookie-parser": "^1.4.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "express-session": "^1.15.6",
     "fs.promised": "^3.0.0",
     "koa": "^2.3.0",
     "koa-body": "^2.3.0",
     "koa-compose": "^4.0.0",
     "koa-route": "^3.2.0",
     "koa-static": "^4.0.1",
+    "mongoose": "^5.3.6",
+    "morgan": "^1.9.1",
     "nodemon": "^1.18.4",
+    "react": "^16.6.0",
+    "request": "^2.88.0",
     "supervisor": "^0.12.0"
   }
-
 }
